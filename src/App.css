@@ -1,0 +1,287 @@
+main{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width:100%;
+}
+
+
+.parent {
+display: grid;
+grid-template-columns: repeat(5, 1fr);
+grid-template-rows: repeat(5, 1fr);
+grid-column-gap: 20px;
+grid-row-gap: 20px;
+width:90%;
+}
+
+.parent> div{
+  background-color: red;
+  box-sizing: border-box;
+  padding:1rem;
+  font-family: "Inter", sans-serif;
+  font-weight: 300;
+}
+
+.parent > div >h4 {
+  font-weight: 400;
+  font-size: 1rem;
+}
+
+
+.parent > .div1, .parent >.div2, .parent >.div3, .parent >.div4, .parent >.div5, .parent >.div6{
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #272727;
+  border-radius: 1rem;
+  box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+  text-align: left;
+
+}
+
+.parent  > .div1 { grid-area: 1 / 1 / 4 / 2; 
+  background-color: #272727;
+  color:#9A9A9A;
+}
+
+.div2 { grid-area: 4 / 1 / 6 / 4; }
+.div3 { grid-area: 3 / 2 / 4 / 4; }
+.div4 { grid-area: 3 / 4 / 6 / 6; }
+
+.parent > .div5 { 
+  grid-area: 1 / 2 / 3 / 5; 
+}
+
+.parent > .div5 > h4 , .parent > .div3 > h4 , .parent > .div4 > h4{
+  color: #C4D9F5;
+  font-family: inter;
+  font-weight: 600;
+}
+
+.parent > .div5 > h5{
+  font-family: "Playfair Display", serif;
+  color:white;
+  font-weight: 400;
+  font-size: 1.5rem;
+}
+
+.tech-icons{
+  width:100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.parent > .div3 {
+  gap:0.5rem;
+}
+
+.parent > .div2{
+  background-color: #C4D9F5;
+  color:#272727;
+
+}
+
+.parent > .div2 > h4{
+  font-weight: 600;
+}
+
+.connect-infos{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap:0.3rem;
+  width:100%;
+}
+
+.contact{
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.contact > a {
+  text-decoration: underline;
+  cursor: pointer;
+  color: inherit;
+}
+
+.contact > h4 , .contact > h3{
+  font-weight: 400;
+}
+
+.contact-icons{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width:100%;
+  margin-top: 0.5rem;
+}
+
+i{
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+img{
+  width:15rem;
+  height:10rem;
+}
+
+.contact-icons > a{
+  text-decoration: none;
+  color: inherit;
+  transition: all 0.3s ease-in;
+}
+
+.contact-icons > a:hover{
+  color:white;
+  transform: translateY(-5px);
+
+}
+
+.div6 { grid-area: 1 / 5 / 3 / 6; }
+
+span{
+  color:#C4D9F5;
+  font-weight: 500;
+}
+
+.parent > .div6 {
+  color:white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap:0.3rem;
+}
+
+.parent > .div6 > p {
+  font-size: 0.7rem;
+  color:#9A9A9A;
+}
+
+.parent > .div6 > h3{
+  color:green;
+  background-color: rgba(0, 128, 0, 0.363);
+  padding:1rem;
+  border-radius: 0.5rem;
+  
+}
+
+.clock {
+  font-size: 2.5rem;
+  font-weight: 600;
+  font-family: "Playfair Display", serif;
+}
+
+
+.parent > .div4{
+  gap:1rem;
+}
+
+.projects{
+  display: flex;
+  width: 100%;
+  gap:1rem;
+}
+
+.projects > img{
+  border-radius: 0.5rem;
+  width:10rem;
+  height:6rem;
+}
+
+.projects-info{
+  width:40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.projects-info > h3 , .projects-info > p{
+  color:white;
+  font-size:1rem;
+}
+
+.projects-info > p{
+  color:#9A9A9A;
+  font-size: 0.8rem;
+}
+
+.projects-icons{
+  width:40%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap:1rem;
+}
+
+.projects-icons > a{
+  color:#C4D9F5;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease-in;
+}
+
+.projects-icons > a > i{
+  font-size: 1rem;
+}
+
+.projects-icons > a:hover{
+  color:white;
+  transform: translateY(-4px);
+}
+
+.projects-list{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap:0.5rem;
+}
+
+
+.parent > div{
+  transition: all 0.4s ease-out;
+}
+
+.parent > div:hover{
+  transform: translateY(-5px);
+}
+
+@media (max-width:1000px){
+  .parent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .parent > div{
+    width:90%;
+  }
+
+  .parent > .div2  img{
+    width:4rem;
+    height:3rem;
+  }
+
+  .contact > h4{
+    font-size: 0.6rem;
+  }
+  .contact h3{
+    font-size: 0.8rem;
+  }
+  .contact i {
+    font-size: 1rem;
+  }
+
+
+
+}
