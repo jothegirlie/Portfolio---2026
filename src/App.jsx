@@ -1,6 +1,10 @@
 import { useState, useEffect} from "react"
 import './App.css'
 import { FaHtml5, FaCss3Alt, FaJs, FaReact, FaGitAlt, FaFigma } from "react-icons/fa";
+import profilePic from './profile.png'
+import project1 from './project1.png'
+import project2 from './project2.png'
+import project3 from './project3.png'
 
 
 export default function App() {
@@ -34,7 +38,7 @@ export default function App() {
 <div className="div2">
   <h4>CONNECT</h4>
   <div className="connect-infos">
-    <img src="src/profile.png" alt="Profile picture" />
+    <img src={profilePic} alt="Profile picture" />
     <div className='contact'>
       <h4>Feel free to contact me at:</h4>
       <a href="mailto:johannalang.14j@gmail.com">
@@ -67,7 +71,7 @@ export default function App() {
   <h4>PROJECTS</h4>
   <div className="projects-list">
   <div className="projects">
-    <img src="src/project1.png" alt="Expense Tracker project" />
+    <img src={project1} alt="Expense Tracker project" />
     <div className="projects-info">
       <h3>Expense Tracker</h3>
       <p>HTML, CSS, React</p>
@@ -82,7 +86,7 @@ export default function App() {
     </div>
   </div>
   <div className="projects">
-    <img src="src/project2.png" alt="E-commerce Shoe Shop" />
+    <img src={project2} alt="E-commerce Shoe Shop" />
     <div className="projects-info">
       <h3>E-commerce Shoe Shop</h3>
       <p>HTML, CSS, React</p>
@@ -97,7 +101,7 @@ export default function App() {
     </div>
   </div>
   <div className="projects">
-    <img src="src/project3.png" alt="Weather Website" />
+    <img src={project3} alt="Weather Website" />
     <div className="projects-info">
       <h3>Weather Website</h3>
       <p>HTML, CSS, Javascript, API</p>
